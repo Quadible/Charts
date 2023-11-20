@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  quadible:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-11-20T23:02:10.3057088+02:00"
+    description: A Helm chart for Kubernetes
+    digest: dccaef40ae6b40eca2bc5b694a6ee37e43d8136101448f8f2e030f4cf6e9dd37
+    name: quadible
+    type: application
+    urls:
+    - https://quadible.github.io/QuadibleCharts/quadible-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-11-20T23:02:10.3047085+02:00"
