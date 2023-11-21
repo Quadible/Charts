@@ -1,0 +1,36 @@
+# This is a redis deployment used for rate limiting
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-rate-limiting
+  labels:
+    app: redis-rate-limiting
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+        app: redis-rate-limiting
+    template:
+        metadata:
+        labels:
+            app: redis-rate-limiting
+        spec:
+        containers:
+        - name: redis-rate-limiting
+          image: microservicesregistryquadible.azurecr.io/redis:alpine3.18
+          ports:
+          - containerPort: 6379
+          # Read resources from values
+          resources:
+            {{- toYaml .Values.redis.resources | nindent 12 }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-rate-limiting
+spec:
+    ports:
+    - port: 6379
+        targetPort: 6379
+    selector:
+        app: redis-rate-limiting
