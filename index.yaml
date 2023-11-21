@@ -3,22 +3,22 @@ entries:
   quadible:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-11-21T14:25:03.8308902+02:00"
+    created: "2023-11-21T14:33:45.1417938+02:00"
     description: A Helm chart for Kubernetes
-    digest: 55cfe04d6ae7e8ff05038eec46eafc2f4015e12538c88b4dc567f9dcf66938c8
+    digest: f2934c2781e063dcb84b53d7a4a372c63212296e374009f1abd8d58317d93947
     name: quadible
     type: application
     urls:
-    - https://quadible.github.io/QuadibleCharts/quadible-1.0.1.tgz
+    - https://quadible.github.io/Charts/quadible-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-11-21T14:25:03.8308902+02:00"
+    created: "2023-11-21T14:33:45.1417938+02:00"
     description: A Helm chart for Kubernetes
     digest: f87eb0c9a480f38e9458af9eea75a321c4a7496219e1aca79c63220c3f8eb2d3
     name: quadible
     type: application
     urls:
-    - https://quadible.github.io/QuadibleCharts/quadible-1.0.0.tgz
+    - https://quadible.github.io/Charts/quadible-1.0.0.tgz
     version: 1.0.0
-generated: "2023-11-21T14:25:03.8308902+02:00"
+generated: "2023-11-21T14:33:45.1412778+02:00"
